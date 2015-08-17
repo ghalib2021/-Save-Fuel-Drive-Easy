@@ -25,7 +25,7 @@
     Original string: <b>%1$s</b><br/><i>Place Id: %2$s</i><br/>Address: %3$s<br/>Phone: %4$s<br/>Website: %5$s-->
     <string name="place_details">&lt;b&gt;%1$s&lt;/b&gt;&lt;br/&gt;&lt;i&gt;Place Id: %2$s&lt;/i&gt;&lt;br/&gt;Address: %3$s&lt;br/&gt;Phone: %4$s&lt;br/&gt;Website: %5$s</string>
     <string name="title_activity_sortshow">Sortshow</string>
-    <string name="speech_prompt">Say something&#8230;</string>
+    <string name="speech_prompt">Say Place Name&#8230;</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Exit</string>
     <string name="title_activity_mapshow">Mapshow</string>
@@ -33,4 +33,5 @@
     <string name="title_activity_showmapnew">Map</string>
     <string name="distance">Distance :</string>
     <string name="title_activity_direction_step">Journey Plan</string>
+    <string name="adsid">ca-app-pub-8601037025948902/2292455274</string>
 </resources>

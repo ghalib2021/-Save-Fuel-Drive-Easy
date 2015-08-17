@@ -1,43 +1,24 @@
 package com.example.google.playservices.placecomplete;
 
-import android.graphics.Color;
 import android.location.Location;
-import android.os.AsyncTask;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
 
-import com.example.google.playservices.placecomplete.module.CustomdirectionstepListAdapter;
-import com.example.google.playservices.placecomplete.module.CustomsortListAdapter;
-import com.example.google.playservices.placecomplete.module.DirectionsJSONParser;
-import com.example.google.playservices.placecomplete.module.stepdata;
-import com.google.android.gms.maps.model.BitmapDescriptorFactory;
-import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.MarkerOptions;
-import com.google.android.gms.maps.model.PolylineOptions;
+import Adapterclass.CustomdirectionstepListAdapter;
 
-import org.json.JSONObject;
+import ParserClass.DirectionsJSONParser;
+import BeanClass.stepdata;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.URL;
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
 
 
-public class DirectionStep extends ActionBarActivity {
+public class DirectionStep extends ActionBarActivity
+       {
+
     ListView stepsh;
     String mylocation,destination;
     DirectionsJSONParser parseobj;
@@ -56,6 +37,7 @@ public class DirectionStep extends ActionBarActivity {
         mActionBar.setCustomView(mCustomView);
         mActionBar.setDisplayShowCustomEnabled(true);
         setContentView(R.layout.activity_direction_step);
+
           //listview resource
         stepsh= (ListView) findViewById(R.id.listViewstep);
         //taking data from intent
@@ -83,6 +65,7 @@ public class DirectionStep extends ActionBarActivity {
         s.setStep("Destination "+destination);
         results.add(s);
         stepsh.setAdapter(new CustomdirectionstepListAdapter(DirectionStep.this,results));
+
 
     }
 
@@ -112,6 +95,11 @@ public class DirectionStep extends ActionBarActivity {
     public void onStatusChanged(String provider, int status, Bundle extras) {
         // TODO Auto-generated method stub
     }
+
+
+
+
+
 
 
 }

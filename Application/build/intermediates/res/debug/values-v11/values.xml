@@ -3,13 +3,13 @@
     <!-- From: file:/D:/aa/PlaceComplete/Application/src/main/res/values-v11/colors.xml -->
     <eat-comment/>
     <color name="colorAccent">#333333</color>
-    <color name="colorPrimary">#009688</color>
-    <color name="colorPrimaryDark">#00796b</color>
+    <color name="colorPrimary">#004D40</color>
+    <color name="colorPrimaryDark">#004D40</color>
     <color name="panel">#DFDBDB</color>
     <color name="text">#FFF</color>
     <color name="textColorPrimary">#000</color>
     <color name="textColorSecondary">#585858</color>
-    <color name="textredcolor">#FF0000</color>
+    <color name="textredcolor">#CC0000</color>
     <!-- From: file:/D:/aa/PlaceComplete/Application/src/main/res/values-v11/styles.xml -->
     <eat-comment/>
     <style name="AppTheme" parent="AppTheme.Base">

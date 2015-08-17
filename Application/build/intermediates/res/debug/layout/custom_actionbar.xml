@@ -11,18 +11,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
         android:src="@drawable/icon"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-       android:layout_gravity="center"
-android:layout_marginLeft="40dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="40dp"
         android:textSize="20sp"
         android:textColor="@color/text"
         android:text="Journey Plan"
-       android:gravity="center"
-
+        android:gravity="center"
         android:layout_weight="2.25" />
 </TableRow>
 </LinearLayout><!-- From: file:/D:/aa/PlaceComplete/Application/src/main/res/layout/custom_actionbar.xml -->

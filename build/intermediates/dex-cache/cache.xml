@@ -135,6 +135,13 @@
         <dex dex="D:\aa\PlaceComplete\Application\build\intermediates\pre-dexed\debug\support-annotations-22.2.0-5a7bbc6cccdb18c20980328d35b0a4c597a4a55a.jar" />
     </item>
     <item
+        jar="D:\aa\PlaceComplete\Application\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\22.2.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="5b37cf49773f7f17aca9830efd3053b0cac56728">
+        <dex dex="D:\aa\PlaceComplete\Application\build\intermediates\pre-dexed\debug\classes-df8310c33008367f2d736b2cb10507c376ff986d.jar" />
+    </item>
+    <item
         jar="D:\aa\PlaceComplete\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\7.5.0\classes.jar"
         jumboMode="false"
         revision="21.1.1"

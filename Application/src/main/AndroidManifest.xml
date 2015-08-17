@@ -87,6 +87,10 @@
             android:name=".DirectionStep"
             android:label="@string/title_activity_direction_step" >
         </activity>
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+
     </application>
 
 </manifest>

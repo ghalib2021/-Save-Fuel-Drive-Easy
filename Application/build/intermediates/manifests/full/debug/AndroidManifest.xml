@@ -87,7 +87,6 @@
             android:name="com.example.google.playservices.placecomplete.DirectionStep"
             android:label="@string/title_activity_direction_step" >
         </activity>
-        <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
         <activity
             android:name="com.google.android.gms.ads.AdActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"

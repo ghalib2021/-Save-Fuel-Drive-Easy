@@ -1,39 +1,33 @@
 package com.example.google.playservices.placecomplete;
 
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.graphics.Color;
 import android.location.Location;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TableLayout;
-import android.widget.TableRow;
 import android.widget.TextView;
-import android.widget.Toast;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 
-import com.example.google.playservices.placecomplete.module.CustomListAdapter;
-import com.example.google.playservices.placecomplete.module.CustomsortListAdapter;
-import com.example.google.playservices.placecomplete.module.GPSTracker;
-import com.example.google.playservices.placecomplete.module.Placedata;
-import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.InterstitialAd;
+
+import Adapterclass.CustomsortListAdapter;
+import BeanClass.GPSTracker;
+import BeanClass.Placedata;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 
 public class Sortshow extends ActionBarActivity {
-    TableLayout tab;
+
     GPSTracker gps;
     private double latitude = 0;
     private double longitude = 0;
@@ -50,7 +44,8 @@ public class Sortshow extends ActionBarActivity {
     ArrayList<Double> sordistarr = new ArrayList<Double>();
     ArrayList<Double> sorlatiarr= new ArrayList<Double>();
     ArrayList<Double> sorlongiarr= new ArrayList<Double>();
-
+    InterstitialAd mInterstitialAd;
+    private InterstitialAd interstitial;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,14 +53,13 @@ public class Sortshow extends ActionBarActivity {
         ActionBar mActionBar = getSupportActionBar();
         mActionBar.setDisplayShowHomeEnabled(false);
         mActionBar.setDisplayShowTitleEnabled(false);
-        /*mActionBar.setDisplayShowHomeEnabled(true);
-        mActionBar.setDisplayShowTitleEnabled(true);*/
+
         LayoutInflater mInflater = LayoutInflater.from(this);
         View mCustomView = mInflater.inflate(R.layout.custom_actionbar,null);
         mActionBar.setCustomView(mCustomView);
         mActionBar.setDisplayShowCustomEnabled(true);
         mapsh= (TextView) findViewById(R.id.buttonmapshow);
-        tab= (TableLayout) findViewById(R.id.table1);
+
         Bundle b = getIntent().getExtras();
         gps = new GPSTracker(Sortshow.this);
         latitude = gps.getLatitude();
@@ -76,7 +70,37 @@ public class Sortshow extends ActionBarActivity {
         ArrayList<Double> longiarr= (ArrayList<Double>) getIntent().getSerializableExtra("longiarr");
         final ArrayList<Double> currentlocation= (ArrayList<Double>) getIntent().getSerializableExtra("currentlocation");
         placeshowlist= (ListView) findViewById(R.id.listViewsortplace);
-try {
+/*
+        // Prepare the Interstitial Ad
+        interstitial = new InterstitialAd(Sortshow.this);
+        // Insert the Ad Unit ID
+        interstitial.setAdUnitId("ca-app-pub-8601037025948902/2292455274");
+
+        //Locate the Banner Ad in activity_main.xml
+        AdView adView = (AdView) this.findViewById(R.id.adView);
+
+        // Request for Ads
+        AdRequest adRequest = new AdRequest.Builder()
+
+                // Add a test device to show Test Ads
+                *//*.addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
+                .addTestDevice("abc")*//*
+                .build();
+
+        // Load ads into Banner Ads
+        adView.loadAd(adRequest);
+
+        // Load ads into Interstitial Ads
+        interstitial.loadAd(adRequest);
+
+        // Prepare an Interstitial Ad Listener
+        interstitial.setAdListener(new AdListener() {
+            public void onAdLoaded() {
+                // Call displayInterstitial() function
+                displayInterstitial();
+            }
+        });*/
+        try {
     Placedata[] p = new Placedata[placearr.size()];
 
     for (int i = 0; i < placearr.size(); i++) {
@@ -99,21 +123,7 @@ try {
 
     }
 
-    for (int i = 0; i < distarr.size(); i++) {
-            /*Location newLocation = new Location("New Location");
-            newLocation.setLatitude(latiarr.get(i));
-            newLocation.setLongitude(longiarr.get(i));
 
-            Location oldLocation = new Location("old");
-            oldLocation.setLatitude(currentlocation.get(0));
-            oldLocation.setLongitude(currentlocation.get(1));
-            DecimalFormat df = new DecimalFormat("#.##");
-
-           double dist= Double.valueOf(oldLocation.distanceTo(newLocation)/1000);
-           // p[i].distance=distarr.get(i);
-            p[i].distance=dist;*/
-
-    }
 
     for (int i = 0; i < latiarr.size(); i++) {
         p[i].latitude = latiarr.get(i);
@@ -158,6 +168,7 @@ try {
 catch (Exception ex)
 {
 
+
 }
 mapsh.setOnClickListener(new View.OnClickListener() {
     @Override
@@ -184,6 +195,10 @@ mapsh.setOnClickListener(new View.OnClickListener() {
 
 
 
-
-
+    public void displayInterstitial() {
+        // If Ads are loaded, show Interstitial else show nothing.
+        if (interstitial.isLoaded()) {
+            interstitial.show();
+        }
+    }
 }

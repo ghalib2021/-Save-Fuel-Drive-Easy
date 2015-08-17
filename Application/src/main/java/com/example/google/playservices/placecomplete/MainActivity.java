@@ -16,12 +16,12 @@
 
 package com.example.google.playservices.placecomplete;
 
-import com.example.google.playservices.placecomplete.module.ConnectionDetector;
-import com.example.google.playservices.placecomplete.module.CustomListAdapter;
-import com.example.google.playservices.placecomplete.module.GPSTracker;
+import BeanClass.ConnectionDetector;
+import Adapterclass.CustomListAdapter;
+import BeanClass.GPSTracker;
 
-import com.example.google.playservices.placecomplete.module.PlaceListAdapter;
-import com.example.google.playservices.placecomplete.module.Placedata;
+import Adapterclass.PlaceListAdapter;
+import BeanClass.Placedata;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.PendingResult;
@@ -38,31 +38,23 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Resources;
-import android.graphics.Color;
 import android.location.Location;
 import android.net.Uri;
 import android.os.Bundle;
-import android.provider.Settings;
 import android.speech.RecognizerIntent;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
-import android.text.Editable;
 import android.text.Html;
 import android.text.Spanned;
-import android.text.TextWatcher;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
-import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
-import android.widget.TableLayout;
-import android.widget.TableRow;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -76,8 +68,7 @@ public class MainActivity extends ActionBarActivity
     LinearLayout verlay;
     GPSTracker gps;
     Context ctx;
-
-ListView placeshowlist;
+    ListView placeshowlist;
     Map<String, String> treeMap;
     private double latitude = 0;
     private double longitude = 0;
@@ -109,15 +100,15 @@ ListView placeshowlist;
     /** Declaring an ArrayAdapter to set items to ListView */
     ArrayAdapter<String> adapter;
     protected GoogleApiClient mGoogleApiClient;
-    private ImageButton btnSpeak;
+    private ImageView btnSpeak;
     private PlaceAutocompleteAdapter mAdapter;
     ArrayList<Placedata> results = new ArrayList<Placedata>();
     private AutoCompleteTextView mAutocompleteView;
     Location location;
     private TextView mPlaceDetailsText;
-Button addbtn,sortbtn,resetbtn;
+ImageView sortbtn,resetbtn,addbtn;
     private TextView mPlaceDetailsAttribution;
-
+    private String selectedItem;
     private static final LatLngBounds BOUNDS_GREATER_SYDNEY = new LatLngBounds(
             new LatLng(-34.041458, 150.790100), new LatLng(-33.682247, 151.383362));
 
@@ -183,7 +174,7 @@ verlay= (LinearLayout) findViewById(R.id.linver);
        placeshowlist= (ListView) findViewById(R.id.listViewplace);
         // Set up the 'clear text' button that clears the text in the autocomplete view
        // listView = (ListView) findViewById(R.id.listItem);
-        btnSpeak = (ImageButton) findViewById(R.id.btnSpeak);
+        btnSpeak = (ImageView) findViewById(R.id.btnSpeak);
 
         btnSpeak.setOnClickListener(new View.OnClickListener() {
 
@@ -224,34 +215,21 @@ verlay= (LinearLayout) findViewById(R.id.linver);
 
         }
 
-        Button clearButton = (Button) findViewById(R.id.button_clear);
-        resetbtn= (Button) findViewById(R.id.button_reset);
-       // addbtn = (Button) findViewById(R.id.button_clear1);
-        resetbtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = getIntent();
-                intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
-                finish();
-                startActivity(getIntent());
-
-            }
-        });
-       sortbtn= (Button) findViewById(R.id.buttonsort);
-        clearButton.setOnClickListener(new View.OnClickListener() {
+           addbtn= (ImageView) findViewById(R.id.buttonplus);
+        addbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 try {
-if(gps.canGetLocation()==false)
-{
-    gps = new GPSTracker(MainActivity.this);
-    latitude = gps.getLatitude();
-    longitude = gps.getLongitude();
+                    if(gps.canGetLocation()==false)
+                    {
+                        gps = new GPSTracker(MainActivity.this);
+                        latitude = gps.getLatitude();
+                        longitude = gps.getLongitude();
 
-    currentlocation.add(latitude);
-    currentlocation.add(longitude);
+                        currentlocation.add(latitude);
+                        currentlocation.add(longitude);
 
-}
+                    }
                     String placeselected = mAutocompleteView.getText().toString();
 
 
@@ -285,29 +263,93 @@ if(gps.canGetLocation()==false)
                 }
                 catch (Exception e)
                 {
-                   // Toast.makeText(getBaseContext(), "add again", Toast.LENGTH_SHORT).show();
+                    // Toast.makeText(getBaseContext(), "add again", Toast.LENGTH_SHORT).show();
+
                 }
+            }
+        });
+        resetbtn= (ImageView) findViewById(R.id.button_reset);
+       // addbtn = (Button) findViewById(R.id.button_clear1);
+        resetbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = getIntent();
+                intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                finish();
+                startActivity(getIntent());
 
             }
         });
+
+       sortbtn= (ImageView) findViewById(R.id.buttonsort);
+
 
 
 sortbtn.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
 
+if(placearr.size()>0) {
+    Intent intentcount = new Intent(getApplicationContext(), Sortshow.class);
 
-        Intent intentcount=new Intent(getApplicationContext(),Sortshow.class);
-
-        intentcount.putExtra("placearr", placearr);
-        intentcount.putExtra("distarr", distarr);
-        intentcount.putExtra("latiarr",latiarr);
-        intentcount.putExtra("longiarr",longiarr);
-        intentcount.putExtra("currentlocation",currentlocation);
-        startActivity(intentcount);
+    intentcount.putExtra("placearr", placearr);
+    intentcount.putExtra("distarr", distarr);
+    intentcount.putExtra("latiarr", latiarr);
+    intentcount.putExtra("longiarr", longiarr);
+    intentcount.putExtra("currentlocation", currentlocation);
+    startActivity(intentcount);
+}
+else{
+    Toast.makeText(getBaseContext(), "please add place first", Toast.LENGTH_SHORT).show();
+}
 
     }
 });
+
+        placeshowlist.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClick(AdapterView<?> parent, View view, final int position, long id) {
+                selectedItem = placearr.get(position).toString();
+
+                AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this,AlertDialog.THEME_HOLO_DARK);
+                builder.setMessage("Do you want to remove " + selectedItem + "?");
+                builder.setCancelable(false);
+                builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        results.remove(position);
+                        placearr.remove(position);
+                        distarr.remove(position);
+                        latiarr.remove(position);
+                        longiarr.remove(position);
+                        CustomListAdapter adapter_code = (CustomListAdapter)placeshowlist.getAdapter();
+
+                        adapter_code.notifyDataSetChanged();
+                       /* adapter.remove(selectedItem);
+                        adapter.notifyDataSetChanged();*/
+
+                        Toast.makeText(
+                                getApplicationContext(),
+                                selectedItem + " has been removed.",
+                                Toast.LENGTH_SHORT).show();
+                    }
+                });
+                builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
+                    }
+                });
+
+                // Create and show the dialog
+                builder.show();
+
+                // Signal OK to avoid further processing of the long click
+                return true;
+            }
+        });
         // \n is for new line
       /*  if(latitude==0.0||longitude==0.0) {
             Toast.makeText(getApplicationContext(), "Turn on GPS Location", Toast.LENGTH_LONG).show();

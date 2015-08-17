@@ -102,6 +102,8 @@ MERGED from com.android.support:support-v4:22.2.0:20:5
 MERGED from com.google.android.gms:play-services-wearable:7.5.0:18:5
 MERGED from com.google.android.gms:play-services-base:7.5.0:18:5
 MERGED from com.android.support:support-v4:22.2.0:20:5
+MERGED from com.android.support:recyclerview-v7:22.2.0:20:5
+MERGED from com.android.support:support-v4:22.2.0:20:5
 	android:targetSdkVersion
 		ADDED from AndroidManifest.xml:24:9
 		INJECTED from AndroidManifest.xml:0:0
@@ -273,6 +275,7 @@ MERGED from com.android.support:support-v4:22.2.0:22:5
 MERGED from com.google.android.gms:play-services-wearable:7.5.0:19:5
 MERGED from com.google.android.gms:play-services-base:7.5.0:20:5
 MERGED from com.android.support:support-v4:22.2.0:22:5
+MERGED from com.android.support:support-v4:22.2.0:22:5
 	android:label
 		ADDED from AndroidManifest.xml:46:9
 	android:background
@@ -379,13 +382,14 @@ ADDED from AndroidManifest.xml:86:9
 	android:name
 		ADDED from AndroidManifest.xml:87:13
 activity#com.google.android.gms.ads.AdActivity
-ADDED from com.google.android.gms:play-services-ads:7.5.0:26:9
+ADDED from AndroidManifest.xml:90:9
+MERGED from com.google.android.gms:play-services-ads:7.5.0:26:9
 	android:configChanges
-		ADDED from com.google.android.gms:play-services-ads:7.5.0:28:13
+		ADDED from AndroidManifest.xml:92:13
 	android:theme
 		ADDED from com.google.android.gms:play-services-ads:7.5.0:29:13
 	android:name
-		ADDED from com.google.android.gms:play-services-ads:7.5.0:27:13
+		ADDED from AndroidManifest.xml:91:13
 activity#com.google.android.gms.ads.purchase.InAppPurchaseActivity
 ADDED from com.google.android.gms:play-services-ads:7.5.0:30:9
 	android:theme

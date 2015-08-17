@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimaryDark">#00796b</color>
-    <color name="colorPrimary">#009688</color>
+    <color name="colorPrimaryDark">#004D40</color>
+    <color name="colorPrimary">#004D40</color>
     <color name="colorAccent">#333333</color>
     <color name="textColorPrimary">#000</color>
 
@@ -9,5 +9,5 @@
     <color name="textColorSecondary">#585858</color>
     <color name="panel">#DFDBDB</color>
     <color name="text">#FFF</color>
-    <color name="textredcolor">#FF0000</color>
+    <color name="textredcolor">#CC0000</color>
 </resources>
