@@ -11,6 +11,8 @@ import android.view.View;
 import android.widget.ListView;
 import android.widget.TableLayout;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 
@@ -100,14 +102,14 @@ public class Sortshow extends ActionBarActivity {
                 displayInterstitial();
             }
         });*/
-        try {
+  try {
     Placedata[] p = new Placedata[placearr.size()];
 
     for (int i = 0; i < placearr.size(); i++) {
         p[i] = new Placedata();
         System.out.println("placeeee" + placearr.get(i));
         p[i].place = placearr.get(i);
-
+//System.out.println("lati#####"+latiarr.get(i));
         Location newLocation = new Location("New Location");
         newLocation.setLatitude(latiarr.get(i));
         newLocation.setLongitude(longiarr.get(i));

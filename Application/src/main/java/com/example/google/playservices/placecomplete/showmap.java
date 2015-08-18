@@ -65,7 +65,7 @@ public class showmap extends FragmentActivity implements LocationListener,TextTo
 
     GoogleMap mGoogleMap;
     GPSTracker gps;
-    int placecount=0;
+
     boolean statusshowdialog=false;
     ProgressDialog progress;
     private float[] mGravity;
@@ -88,6 +88,8 @@ public class showmap extends FragmentActivity implements LocationListener,TextTo
     ImageView btnmap,btnsate;
     TextView totalplace,visitedplace;
     float bearinginfloat;
+    int placecount=0;
+    boolean dialogShown=false;
     int i=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -164,7 +166,7 @@ mGoogleMap.getUiSettings().setCompassEnabled(true);
                     .target(point)
                     .bearing(45)
                     .tilt(90)
-                    .zoom(60)
+                    .zoom(14)
                     .build(); //Creates a CameraPosition from the builder*/
             mGoogleMap.animateCamera(CameraUpdateFactory.newCameraPosition(
                     cameraPosition));
@@ -216,10 +218,7 @@ try {
 
         // Start downloading json data from Google Directions API
         downloadTask1.execute(url1);
-
-
-
-        DownloadTask3 voicetask = new DownloadTask3();
+ DownloadTask3 voicetask = new DownloadTask3();
         voicetask.execute(url1);
     }
     for (int i = 0; i < latiarr.size(); i++) {
@@ -238,7 +237,7 @@ try {
 
             downloadTask.execute(url);
 
-            DownloadTask3 voicetask = new DownloadTask3();
+           DownloadTask3 voicetask = new DownloadTask3();
             voicetask.execute(url);
 
         }
@@ -255,27 +254,14 @@ catch (Exception es)
             mGoogleMap.setOnMyLocationChangeListener(new GoogleMap.OnMyLocationChangeListener() {
                 @Override
                 public void onMyLocationChange(Location location) {
-                    /*final LatLng movingpoint = new LatLng(location.getLatitude(),location.getLongitude());
-                    mGoogleMap.moveCamera(CameraUpdateFactory.newLatLng(movingpoint));*/
-                    LatLng movingpoint = new LatLng(location.getLatitude(),location.getLongitude());
-                    /*CameraPosition cameraPosition = new CameraPosition.Builder()
-                            .target(movingpoint)
-                            .bearing(45)
-                            .tilt(90)
-                            .zoom(60)
-                            .build(); //Creates a CameraPosition from the builder*//*
-                    mGoogleMap.animateCamera(CameraUpdateFactory.newCameraPosition(
-                            cameraPosition));*/
 
-                    /*CameraPosition currentPlace = new CameraPosition.Builder()
-                            .target(new LatLng(location.getLatitude(),location.getLongitude()))
-                            .bearing(90).tilt(90).zoom(18f).build();
-                    mGoogleMap.moveCamera(CameraUpdateFactory.newCameraPosition(currentPlace));*/
+                    LatLng movingpoint = new LatLng(location.getLatitude(),location.getLongitude());
+
                     CameraPosition cameraPosition = new CameraPosition.Builder()
                             .target(new LatLng(location.getLatitude(),location.getLongitude()))
                             .bearing(bearinginfloat)
                             .tilt(45)
-                            .zoom(14)
+                            .zoom(60)
                             .build(); //Creates a CameraPosition from the builder*/
                     mGoogleMap.animateCamera(CameraUpdateFactory.newCameraPosition(
                             cameraPosition));
@@ -289,6 +275,7 @@ catch (Exception es)
                     newLocation.setLatitude(latitude);
                     newLocation.setLongitude(longitude);
                     Location oldLocation = new Location("dest");
+
             for( i=0;i<latiarr.size();i++) {
 
               oldLocation.setLongitude(longiarr.get(i));
@@ -299,35 +286,48 @@ catch (Exception es)
                 Double  distbet= Double.valueOf(oldLocation.distanceTo(newLocation)/1000);
                 Double tar=1.0/7;
 
+
                 if(distbet<tar&&Placestatus[i].equals("true"))
                 {
 
-                    final AlertDialog.Builder builder = new AlertDialog.Builder(showmap.this, AlertDialog.THEME_HOLO_DARK);
-                    builder.setTitle("DO YOU WANT TO GO NEXT DESTINATION");
 
-                    builder.setMessage("YOU REACH YOUR DESTINATION "+"\n"+placeraech);
+                    if(dialogShown==true)
+                    {
+                        return;
+                    }
+                    else
+                    {
+                        dialogShown = true;
+                        final AlertDialog.Builder builder = new AlertDialog.Builder(showmap.this, AlertDialog.THEME_HOLO_DARK);
+                        builder.setTitle("DO YOU WANT TO GO NEXT DESTINATION");
 
-                    final int finalI = i;
-                    builder.setPositiveButton("YES", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                           Placestatus[finalI]="false";
-                            dialog.dismiss();
-                            placecount=placecount+1;
-                            visitedplace.setText(Integer.toString(placecount));
-                        }
-                    });
-                    builder.setNegativeButton("NO",new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            finish();
-                            dialog.dismiss();
-                        }
-                    });
+                        builder.setMessage("YOU REACH YOUR DESTINATION "+"\n"+placeraech);
 
-                    final AlertDialog dialog = builder.create();
-                    dialog.show();
-                    new CountDownTimer(5000, 1000) {
+                        final int finalI = i;
+                        builder.setPositiveButton("YES", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                placecount=placecount+1;
+                                visitedplace.setText(Integer.toString(placecount));
+                                Placestatus[finalI]="false";
+                                dialog.dismiss();
+                                dialogShown = false;
+
+                            }
+                        });
+                        builder.setNegativeButton("NO",new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                finish();
+                                dialog.dismiss();
+                            }
+                        });
+
+                        final AlertDialog dialog = builder.create();
+                        dialog.show();
+                    }
+
+                   /* new CountDownTimer(5000, 1000) {
 
                         @Override
                         public void onTick(long millisUntilFinished) {
@@ -341,7 +341,7 @@ catch (Exception es)
 
                             dialog.dismiss();
                         }
-                    }.start();
+                    }.start();*/
                    // Toast.makeText(getApplicationContext(),"Reach to Place "+placeraech,Toast.LENGTH_LONG).show();
 
                 }
@@ -628,14 +628,11 @@ catch (Exception es)
                     LatLng position = new LatLng(lat, lng);
 
                     points.add(position);
-
-
-
-                }
+  }
 
                 // Adding all the points in the route to LineOptions
                 lineOptions.addAll(points);
-                lineOptions.width(10);
+                lineOptions.width(5);
                 lineOptions.color(Color.RED);
             }
 
@@ -646,7 +643,8 @@ catch (Exception es)
             }
             catch (Exception e)
             {
-                Toast.makeText(getApplicationContext(), "No Route between"+sourceplace+" to "+ponitplace,Toast.LENGTH_SHORT).show();
+                System.out.println("excc"+e.toString());
+               // Toast.makeText(getApplicationContext(), "No Route between"+sourceplace+" to "+ponitplace,Toast.LENGTH_SHORT).show();
             }
         }
     }

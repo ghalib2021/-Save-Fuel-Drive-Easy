@@ -247,14 +247,14 @@ verlay= (LinearLayout) findViewById(R.id.linver);
                             results.add(newsData);
 
                             placeshowlist.setAdapter(new CustomListAdapter(MainActivity.this, results));
-                            mAutocompleteView.setText("");
+
                             placearr.add(placeselected);
                             System.out.print(dist + "lati" + lati + "logi" + longi + placeidstr);
                             distarr.add(Double.valueOf(dist));
                             latiarr.add(lati);
                             longiarr.add(longi);
                             placeid.add(placeidstr);
-
+                            mAutocompleteView.setText("");
                         }
 
                     }
@@ -455,8 +455,8 @@ else{
              placeshow=place.getName().toString()+" "+place.getAddress().toString();
             String show=placeshow+" Distance="+distance;
 
-
-
+           Toast.makeText(getApplicationContext(),"Distance" +dist+lati+longi,Toast.LENGTH_SHORT).show();
+           System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@"+dist+lati+longi);
            /* Toast.makeText(this,
                     "Distance" +dist,
                     Toast.LENGTH_SHORT).show();*/
