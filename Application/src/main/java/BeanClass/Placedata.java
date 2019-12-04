@@ -9,7 +9,13 @@ public class Placedata {
 
     public double latitude;
     public double longitude;
-
+    public String distanceunit;
+    public void setDistanceUnit(String unit) {
+        distanceunit = unit;
+    }
+    public String getDistanceunit() {
+        return distanceunit;
+    }
     public double getCurrentlatitude() {
         return currentlatitude;
     }

@@ -2,207 +2,214 @@
 <items version="2" >
 
     <item
-        jar="D:\aa\PlaceComplete\Application\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\22.0.0\libs\internal_impl-22.0.0.jar"
+        jar="D:\projects\RE-Run-drive\RE-Run-drive\PlaceComplete\Application\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\22.0.0\jars\libs\internal_impl-22.0.0.jar"
         jumboMode="false"
         revision="21.1.1"
         sha1="ba3df4eb0a630d7de294f0e48d3f9267d279b784">
-        <dex dex="D:\aa\PlaceComplete\Application\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-e4ac6e11b4d1d15d343f01d9121ef51ff551efdd.jar" />
+        <dex dex="D:\projects\RE-Run-drive\RE-Run-drive\PlaceComplete\Application\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-916a44752305e416824d88c85d1ca47be23ea173.jar" />
     </item>
     <item
-        jar="D:\aa\PlaceComplete\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\7.5.0\classes.jar"
-        jumboMode="false"
-        revision="21.1.1"
-        sha1="f44d03c138cb6488fdbaa65e3a7e5878861a56d8">
-        <dex dex="D:\aa\PlaceComplete\Application\build\intermediates\pre-dexed\debug\classes-4ae39fc3a26f8069515c9d9c174eabdc17606a75.jar" />
-    </item>
-    <item
-        jar="D:\aa\PlaceComplete\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\7.5.0\classes.jar"
+        jar="D:\projects\RE-Run-drive\RE-Run-drive\PlaceComplete\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\7.5.0\jars\classes.jar"
         jumboMode="false"
         revision="21.1.1"
         sha1="272bc5d7063f24bc3a33ea1d318cde8f31f5ec4c">
-        <dex dex="D:\aa\PlaceComplete\Application\build\intermediates\pre-dexed\debug\classes-b50f86011c3c48fced0b2fd5b3ed2d699b1baf51.jar" />
+        <dex dex="D:\projects\RE-Run-drive\RE-Run-drive\PlaceComplete\Application\build\intermediates\pre-dexed\debug\classes-bac1a0eb7b95d992e535d146c57d02da85f835b2.jar" />
     </item>
     <item
-        jar="D:\aa\PlaceComplete\Application\build\intermediates\exploded-aar\com.android.support\support-v13\22.2.0\libs\internal_impl-22.2.0.jar"
-        jumboMode="false"
-        revision="21.1.1"
-        sha1="79a5b6d9fbab3b5fb4c6f86a1ed7a17722fd937b">
-        <dex dex="D:\aa\PlaceComplete\Application\build\intermediates\pre-dexed\debug\internal_impl-22.2.0-204c194586d24c6e6d378bc5747837ac4400aa66.jar" />
-    </item>
-    <item
-        jar="D:\aa\PlaceComplete\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-appstate\7.5.0\classes.jar"
+        jar="D:\projects\RE-Run-drive\RE-Run-drive\PlaceComplete\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-appstate\7.5.0\jars\classes.jar"
         jumboMode="false"
         revision="21.1.1"
         sha1="68c140702c7242d914655bcb3164d9e8c45b84cb">
-        <dex dex="D:\aa\PlaceComplete\Application\build\intermediates\pre-dexed\debug\classes-3bbdc44544c4cec5e0d0236c6a89ca095d80e4ed.jar" />
+        <dex dex="D:\projects\RE-Run-drive\RE-Run-drive\PlaceComplete\Application\build\intermediates\pre-dexed\debug\classes-e13723697cbf1cf458fe029f3f42ca9909fdb1b7.jar" />
     </item>
     <item
-        jar="D:\aa\PlaceComplete\Application\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.0\classes.jar"
-        jumboMode="false"
-        revision="21.1.1"
-        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
-        <dex dex="D:\aa\PlaceComplete\Application\build\intermediates\pre-dexed\debug\classes-a8f535f0877db5ab5e264280b7c51789b998adc1.jar" />
-    </item>
-    <item
-        jar="D:\aa\PlaceComplete\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\7.5.0\classes.jar"
-        jumboMode="false"
-        revision="21.1.1"
-        sha1="1e98ef3f124bb7a11f8575f9ff5dfea330b61b6f">
-        <dex dex="D:\aa\PlaceComplete\Application\build\intermediates\pre-dexed\debug\classes-14c8c0efde8fcb1c5aef68daf42f7424a1a3e42e.jar" />
-    </item>
-    <item
-        jar="D:\aa\PlaceComplete\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\7.5.0\classes.jar"
-        jumboMode="false"
-        revision="21.1.1"
-        sha1="f02127a85abd52a2cd526d4c2409f21969f80ee8">
-        <dex dex="D:\aa\PlaceComplete\Application\build\intermediates\pre-dexed\debug\classes-83c7cf8a6088b55edcaf5960a9e0bafe2476980d.jar" />
-    </item>
-    <item
-        jar="D:\aa\PlaceComplete\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\7.5.0\classes.jar"
-        jumboMode="false"
-        revision="21.1.1"
-        sha1="02bac2dc792d78241077861566f2c82da955e7fa">
-        <dex dex="D:\aa\PlaceComplete\Application\build\intermediates\pre-dexed\debug\classes-5a376ee50fc0d5638803d13895baf844d5e269df.jar" />
-    </item>
-    <item
-        jar="D:\aa\PlaceComplete\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\7.5.0\classes.jar"
-        jumboMode="false"
-        revision="21.1.1"
-        sha1="1a6411087ab88ce5542f593e63a2752b6b0d6f1a">
-        <dex dex="D:\aa\PlaceComplete\Application\build\intermediates\pre-dexed\debug\classes-5b198894a6362477c7f5de2f113a0f9c98d51942.jar" />
-    </item>
-    <item
-        jar="D:\aa\PlaceComplete\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\7.5.0\classes.jar"
-        jumboMode="false"
-        revision="21.1.1"
-        sha1="a172852a35ff919e85b9b7f14bbc15c5bee25520">
-        <dex dex="D:\aa\PlaceComplete\Application\build\intermediates\pre-dexed\debug\classes-6bb3ac311488fa268cd7967cf88f918a1af8350d.jar" />
-    </item>
-    <item
-        jar="D:\aa\PlaceComplete\Application\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\classes.jar"
-        jumboMode="false"
-        revision="21.1.1"
-        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
-        <dex dex="D:\aa\PlaceComplete\Application\build\intermediates\pre-dexed\debug\classes-4975067eea6199e34053c8f1ccaf02c59426476d.jar" />
-    </item>
-    <item
-        jar="D:\aa\PlaceComplete\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.5.0\classes.jar"
-        jumboMode="false"
-        revision="21.1.1"
-        sha1="a78183f30e769a98ab4820794f597763088d3065">
-        <dex dex="D:\aa\PlaceComplete\Application\build\intermediates\pre-dexed\debug\classes-2ee7f03e01bae92afdb937fa95ee23f8bb9ff6c6.jar" />
-    </item>
-    <item
-        jar="D:\aa\PlaceComplete\Application\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\22.0.0\classes.jar"
-        jumboMode="false"
-        revision="21.1.1"
-        sha1="a1372c17fccacca753d3951d3ad820571cbce075">
-        <dex dex="D:\aa\PlaceComplete\Application\build\intermediates\pre-dexed\debug\classes-2c0842b04d8da5751df4d6f0bfc558259ae92500.jar" />
-    </item>
-    <item
-        jar="D:\aa\PlaceComplete\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\7.5.0\classes.jar"
-        jumboMode="false"
-        revision="21.1.1"
-        sha1="6440e5e5cfe368f9bff3c537fb8988048069cb33">
-        <dex dex="D:\aa\PlaceComplete\Application\build\intermediates\pre-dexed\debug\classes-ea962b063420ad308ed6cde3886a3a0cdf8fccf3.jar" />
-    </item>
-    <item
-        jar="D:\aa\PlaceComplete\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\7.5.0\classes.jar"
-        jumboMode="false"
-        revision="21.1.1"
-        sha1="29ebc7e04d877062317c8cc0e68b20f0c1fcda66">
-        <dex dex="D:\aa\PlaceComplete\Application\build\intermediates\pre-dexed\debug\classes-50ee65cffe282d38da465b9b06335833661a0879.jar" />
-    </item>
-    <item
-        jar="D:\aa\PlaceComplete\Application\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\libs\internal_impl-22.2.0.jar"
-        jumboMode="false"
-        revision="21.1.1"
-        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
-        <dex dex="D:\aa\PlaceComplete\Application\build\intermediates\pre-dexed\debug\internal_impl-22.2.0-e3426d883a1e76ca770e06cfe7225695d473da6f.jar" />
-    </item>
-    <item
-        jar="D:\aa\PlaceComplete\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.5.0\classes.jar"
-        jumboMode="false"
-        revision="21.1.1"
-        sha1="06a42becc33232ec0ee125161da68c1829c9f8fd">
-        <dex dex="D:\aa\PlaceComplete\Application\build\intermediates\pre-dexed\debug\classes-f4b66e64b6d05feddc75205cffe5f0dbe671dc56.jar" />
-    </item>
-    <item
-        jar="D:\sdk\android-sdks\extras\android\m2repository\com\android\support\support-annotations\22.2.0\support-annotations-22.2.0.jar"
-        jumboMode="false"
-        revision="21.1.1"
-        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
-        <dex dex="D:\aa\PlaceComplete\Application\build\intermediates\pre-dexed\debug\support-annotations-22.2.0-5a7bbc6cccdb18c20980328d35b0a4c597a4a55a.jar" />
-    </item>
-    <item
-        jar="D:\aa\PlaceComplete\Application\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\22.2.0\classes.jar"
-        jumboMode="false"
-        revision="21.1.1"
-        sha1="5b37cf49773f7f17aca9830efd3053b0cac56728">
-        <dex dex="D:\aa\PlaceComplete\Application\build\intermediates\pre-dexed\debug\classes-df8310c33008367f2d736b2cb10507c376ff986d.jar" />
-    </item>
-    <item
-        jar="D:\aa\PlaceComplete\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\7.5.0\classes.jar"
-        jumboMode="false"
-        revision="21.1.1"
-        sha1="8d736fefa22d896e84a268354b3ed48a42663150">
-        <dex dex="D:\aa\PlaceComplete\Application\build\intermediates\pre-dexed\debug\classes-b21b24a4637014c3c122e72fd4bcf20d1055ebc7.jar" />
-    </item>
-    <item
-        jar="D:\aa\PlaceComplete\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\7.5.0\classes.jar"
-        jumboMode="false"
-        revision="21.1.1"
-        sha1="6836d188602ec5382d1967c58b00960eb8ff8773">
-        <dex dex="D:\aa\PlaceComplete\Application\build\intermediates\pre-dexed\debug\classes-ccabf1194d6544b70f8ec5793b059a73ee4a00b9.jar" />
-    </item>
-    <item
-        jar="D:\aa\PlaceComplete\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\7.5.0\classes.jar"
-        jumboMode="false"
-        revision="21.1.1"
-        sha1="d405025c600055237c171a0bbabaa49d69696573">
-        <dex dex="D:\aa\PlaceComplete\Application\build\intermediates\pre-dexed\debug\classes-8b75709333b795f2ae01de2532ac488467c57837.jar" />
-    </item>
-    <item
-        jar="D:\aa\PlaceComplete\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\7.5.0\classes.jar"
-        jumboMode="false"
-        revision="21.1.1"
-        sha1="e7b35244f50663b3f8d150714bca9ecd7a290da1">
-        <dex dex="D:\aa\PlaceComplete\Application\build\intermediates\pre-dexed\debug\classes-f32000aceccd24fe77a90869a3a87186103a3c6f.jar" />
-    </item>
-    <item
-        jar="D:\aa\PlaceComplete\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\7.5.0\classes.jar"
+        jar="D:\projects\RE-Run-drive\RE-Run-drive\PlaceComplete\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\7.5.0\jars\classes.jar"
         jumboMode="false"
         revision="21.1.1"
         sha1="8e3a972f28b8bae817e382257ba177a31bcadbbc">
-        <dex dex="D:\aa\PlaceComplete\Application\build\intermediates\pre-dexed\debug\classes-98907e3d048457ed1d01559c716ac42ecf5bce53.jar" />
+        <dex dex="D:\projects\RE-Run-drive\RE-Run-drive\PlaceComplete\Application\build\intermediates\pre-dexed\debug\classes-f4c23ff7b140d404bba1f1a8cec932d6f9770240.jar" />
     </item>
     <item
-        jar="D:\aa\PlaceComplete\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\7.5.0\classes.jar"
+        jar="D:\projects\RE-Run-drive\RE-Run-drive\PlaceComplete\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="6836d188602ec5382d1967c58b00960eb8ff8773">
+        <dex dex="D:\projects\RE-Run-drive\RE-Run-drive\PlaceComplete\Application\build\intermediates\pre-dexed\debug\classes-8ada09b680e6340372e290a3922ac2c5395c60e1.jar" />
+    </item>
+    <item
+        jar="D:\projects\RE-Run-drive\RE-Run-drive\PlaceComplete\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="e7b35244f50663b3f8d150714bca9ecd7a290da1">
+        <dex dex="D:\projects\RE-Run-drive\RE-Run-drive\PlaceComplete\Application\build\intermediates\pre-dexed\debug\classes-8ce8a0fb8c8e2a3d97b81bea93afe5067eaf3565.jar" />
+    </item>
+    <item
+        jar="D:\projects\RE-Run-drive\RE-Run-drive\PlaceComplete\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="f44d03c138cb6488fdbaa65e3a7e5878861a56d8">
+        <dex dex="D:\projects\RE-Run-drive\RE-Run-drive\PlaceComplete\Application\build\intermediates\pre-dexed\debug\classes-d6b53208b17f514cb27f6ffa0f492e208208a557.jar" />
+    </item>
+    <item
+        jar="D:\projects\RE-Run-drive\RE-Run-drive\PlaceComplete\Application\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="5b37cf49773f7f17aca9830efd3053b0cac56728">
+        <dex dex="D:\projects\RE-Run-drive\RE-Run-drive\PlaceComplete\Application\build\intermediates\pre-dexed\debug\classes-64e1e93cd46e22b7071f633c2ccb4dfa4162a76c.jar" />
+    </item>
+    <item
+        jar="D:\projects\RE-Run-drive\RE-Run-drive\PlaceComplete\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\7.5.0\jars\classes.jar"
         jumboMode="false"
         revision="21.1.1"
         sha1="ba207be21987c11b37d9f8faa08ed6e722569f30">
-        <dex dex="D:\aa\PlaceComplete\Application\build\intermediates\pre-dexed\debug\classes-340e1e8de5968d62d680d73f837bfe631f9f61c1.jar" />
+        <dex dex="D:\projects\RE-Run-drive\RE-Run-drive\PlaceComplete\Application\build\intermediates\pre-dexed\debug\classes-d1939f0970f87a9f9f2067820184fb0998bc3e54.jar" />
     </item>
     <item
-        jar="D:\aa\PlaceComplete\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\7.5.0\classes.jar"
+        jar="D:\projects\RE-Run-drive\RE-Run-drive\PlaceComplete\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\7.5.0\jars\classes.jar"
         jumboMode="false"
         revision="21.1.1"
-        sha1="69dd177337ead693c408c8dddc9546bb6f1244fa">
-        <dex dex="D:\aa\PlaceComplete\Application\build\intermediates\pre-dexed\debug\classes-bb8751e05be86e69454ed64586b752c3eb269755.jar" />
+        sha1="02bac2dc792d78241077861566f2c82da955e7fa">
+        <dex dex="D:\projects\RE-Run-drive\RE-Run-drive\PlaceComplete\Application\build\intermediates\pre-dexed\debug\classes-2976a2a315c4e8160bd666d6661ec7f3df7f20b5.jar" />
     </item>
     <item
-        jar="D:\aa\PlaceComplete\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\7.5.0\classes.jar"
+        jar="D:\projects\RE-Run-drive\RE-Run-drive\PlaceComplete\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="06a42becc33232ec0ee125161da68c1829c9f8fd">
+        <dex dex="D:\projects\RE-Run-drive\RE-Run-drive\PlaceComplete\Application\build\intermediates\pre-dexed\debug\classes-695e378b24ba32149c7b07f9b99caa00d511874b.jar" />
+    </item>
+    <item
+        jar="D:\projects\RE-Run-drive\RE-Run-drive\PlaceComplete\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="a172852a35ff919e85b9b7f14bbc15c5bee25520">
+        <dex dex="D:\projects\RE-Run-drive\RE-Run-drive\PlaceComplete\Application\build\intermediates\pre-dexed\debug\classes-d45982dc5787f8909e26956de59fddac5c1e4c1a.jar" />
+    </item>
+    <item
+        jar="D:\projects\RE-Run-drive\RE-Run-drive\PlaceComplete\Application\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\22.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="a1372c17fccacca753d3951d3ad820571cbce075">
+        <dex dex="D:\projects\RE-Run-drive\RE-Run-drive\PlaceComplete\Application\build\intermediates\pre-dexed\debug\classes-8d28499e8251e820d13d4f114d0c0ea42c824cf9.jar" />
+    </item>
+    <item
+        jar="D:\projects\RE-Run-drive\RE-Run-drive\PlaceComplete\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="1a6411087ab88ce5542f593e63a2752b6b0d6f1a">
+        <dex dex="D:\projects\RE-Run-drive\RE-Run-drive\PlaceComplete\Application\build\intermediates\pre-dexed\debug\classes-514ec99827e621ceec1546cc89646dee9390c20f.jar" />
+    </item>
+    <item
+        jar="D:\projects\RE-Run-drive\RE-Run-drive\PlaceComplete\Application\build\intermediates\exploded-aar\com.android.support\support-v13\22.2.0\jars\libs\internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="79a5b6d9fbab3b5fb4c6f86a1ed7a17722fd937b">
+        <dex dex="D:\projects\RE-Run-drive\RE-Run-drive\PlaceComplete\Application\build\intermediates\pre-dexed\debug\internal_impl-22.2.0-9c913b56e2e62228fb6274f87e7c6e0e08029b31.jar" />
+    </item>
+    <item
+        jar="D:\projects\RE-Run-drive\RE-Run-drive\PlaceComplete\Application\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="D:\projects\RE-Run-drive\RE-Run-drive\PlaceComplete\Application\build\intermediates\pre-dexed\debug\classes-0f554ab706a0854a5926e5256827606f65932d6d.jar" />
+    </item>
+    <item
+        jar="D:\projects\RE-Run-drive\RE-Run-drive\PlaceComplete\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="29ebc7e04d877062317c8cc0e68b20f0c1fcda66">
+        <dex dex="D:\projects\RE-Run-drive\RE-Run-drive\PlaceComplete\Application\build\intermediates\pre-dexed\debug\classes-91c9949cc5065984728b16843ef4c7cddb07a3db.jar" />
+    </item>
+    <item
+        jar="D:\projects\RE-Run-drive\RE-Run-drive\PlaceComplete\Application\libs\google-api-translate-java-0.97.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="220e4c3eb792e8c50e21add2874cd1a66844ce6f">
+        <dex dex="D:\projects\RE-Run-drive\RE-Run-drive\PlaceComplete\Application\build\intermediates\pre-dexed\debug\google-api-translate-java-0.97-c80c1b50a899c0836bf74c20724228eb0e1b5f8c.jar" />
+    </item>
+    <item
+        jar="D:\projects\RE-Run-drive\RE-Run-drive\PlaceComplete\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="f02127a85abd52a2cd526d4c2409f21969f80ee8">
+        <dex dex="D:\projects\RE-Run-drive\RE-Run-drive\PlaceComplete\Application\build\intermediates\pre-dexed\debug\classes-f2fa2441d37c03860a4dac38ff0ab7b941a06618.jar" />
+    </item>
+    <item
+        jar="D:\projects\RE-Run-drive\RE-Run-drive\PlaceComplete\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="a78183f30e769a98ab4820794f597763088d3065">
+        <dex dex="D:\projects\RE-Run-drive\RE-Run-drive\PlaceComplete\Application\build\intermediates\pre-dexed\debug\classes-abb284861f7d6a997670358b1150ba0d6c2666c4.jar" />
+    </item>
+    <item
+        jar="D:\android\sdk\adt-bundle-windows-x86_64-20130219\sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.0\support-annotations-22.2.0.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
+        <dex dex="D:\projects\RE-Run-drive\RE-Run-drive\PlaceComplete\Application\build\intermediates\pre-dexed\debug\support-annotations-22.2.0-952802410b8b9dcb84097553d83fa7ae0ec2dfb9.jar" />
+    </item>
+    <item
+        jar="D:\projects\RE-Run-drive\RE-Run-drive\PlaceComplete\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\7.5.0\jars\classes.jar"
         jumboMode="false"
         revision="21.1.1"
         sha1="63ec6e9f4fe5482a7447d0f3091b8e543a02554c">
-        <dex dex="D:\aa\PlaceComplete\Application\build\intermediates\pre-dexed\debug\classes-3abbfafed0278bb261d33dd10f04459ea16958d5.jar" />
+        <dex dex="D:\projects\RE-Run-drive\RE-Run-drive\PlaceComplete\Application\build\intermediates\pre-dexed\debug\classes-482439f0c04b27e7ee8c2151f395e1b67146a6c0.jar" />
     </item>
     <item
-        jar="D:\aa\PlaceComplete\Application\build\intermediates\exploded-aar\com.android.support\support-v13\22.2.0\classes.jar"
+        jar="D:\projects\RE-Run-drive\RE-Run-drive\PlaceComplete\Application\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\libs\internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
+        <dex dex="D:\projects\RE-Run-drive\RE-Run-drive\PlaceComplete\Application\build\intermediates\pre-dexed\debug\internal_impl-22.2.0-6520f5f6b177e1333e8eeb86afa645ceef0bdee1.jar" />
+    </item>
+    <item
+        jar="D:\projects\RE-Run-drive\RE-Run-drive\PlaceComplete\Application\build\intermediates\exploded-aar\com.android.support\support-v13\22.2.0\jars\classes.jar"
         jumboMode="false"
         revision="21.1.1"
         sha1="9aa93835393824b436f366120c9ba8a0260ce75d">
-        <dex dex="D:\aa\PlaceComplete\Application\build\intermediates\pre-dexed\debug\classes-8eb67948d07e4ecda21f8739b0292071063d491a.jar" />
+        <dex dex="D:\projects\RE-Run-drive\RE-Run-drive\PlaceComplete\Application\build\intermediates\pre-dexed\debug\classes-2966ac3426c6e3830e30d65043c7b66d43ac16ad.jar" />
+    </item>
+    <item
+        jar="D:\projects\RE-Run-drive\RE-Run-drive\PlaceComplete\Application\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
+        <dex dex="D:\projects\RE-Run-drive\RE-Run-drive\PlaceComplete\Application\build\intermediates\pre-dexed\debug\classes-c6bb1f83056ea4c9a00f87d19dff6366f0c25e67.jar" />
+    </item>
+    <item
+        jar="D:\projects\RE-Run-drive\RE-Run-drive\PlaceComplete\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="6440e5e5cfe368f9bff3c537fb8988048069cb33">
+        <dex dex="D:\projects\RE-Run-drive\RE-Run-drive\PlaceComplete\Application\build\intermediates\pre-dexed\debug\classes-6700a94684bae3ef664462fcf8292fba0651e384.jar" />
+    </item>
+    <item
+        jar="D:\projects\RE-Run-drive\RE-Run-drive\PlaceComplete\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="1e98ef3f124bb7a11f8575f9ff5dfea330b61b6f">
+        <dex dex="D:\projects\RE-Run-drive\RE-Run-drive\PlaceComplete\Application\build\intermediates\pre-dexed\debug\classes-0f8bb5e1dc8f8d2f7962137090dd9c3fe73cd65c.jar" />
+    </item>
+    <item
+        jar="D:\projects\RE-Run-drive\RE-Run-drive\PlaceComplete\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="69dd177337ead693c408c8dddc9546bb6f1244fa">
+        <dex dex="D:\projects\RE-Run-drive\RE-Run-drive\PlaceComplete\Application\build\intermediates\pre-dexed\debug\classes-c39752e2ab7c2aaf39afc39829d5dd4d1d65b067.jar" />
+    </item>
+    <item
+        jar="D:\projects\RE-Run-drive\RE-Run-drive\PlaceComplete\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="d405025c600055237c171a0bbabaa49d69696573">
+        <dex dex="D:\projects\RE-Run-drive\RE-Run-drive\PlaceComplete\Application\build\intermediates\pre-dexed\debug\classes-30297e29eacd76021b920d7870197d09f1210487.jar" />
+    </item>
+    <item
+        jar="D:\projects\RE-Run-drive\RE-Run-drive\PlaceComplete\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="8d736fefa22d896e84a268354b3ed48a42663150">
+        <dex dex="D:\projects\RE-Run-drive\RE-Run-drive\PlaceComplete\Application\build\intermediates\pre-dexed\debug\classes-a921e7eaa50c67614e61976d3a10b43ce6003a02.jar" />
     </item>
 
 </items>

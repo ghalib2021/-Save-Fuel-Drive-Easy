@@ -8,8 +8,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-import com.example.google.playservices.placecomplete.R;
-
+import com.map.saveeasysavedrivee.R;
 import java.util.ArrayList;
 
 /**

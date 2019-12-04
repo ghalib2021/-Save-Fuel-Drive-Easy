@@ -1,13 +1,14 @@
 package Adapterclass;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import com.example.google.playservices.placecomplete.R;
+import com.map.saveeasysavedrivee.R;
 import BeanClass.Placedata;
 
 import java.util.ArrayList;
@@ -53,7 +54,7 @@ public class CustomListAdapter extends BaseAdapter {
         }
 
         holder.headlineView.setText(listData.get(position).getPlace());
-
+        holder.headlineView.setTextColor(Color.WHITE);
         return convertView;
     }
 

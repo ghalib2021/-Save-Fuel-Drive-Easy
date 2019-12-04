@@ -34,4 +34,26 @@
     <string name="distance">Distance :</string>
     <string name="title_activity_direction_step">Journey Plan</string>
     <string name="adsid">ca-app-pub-8601037025948902/2292455274</string>
+    <string-array name="distance">
+        <item>Kilometers</item>
+        <item>Miles</item>
+    </string-array>
+    <string-array name="mape_types">
+        <item>NORMAL</item>
+        <item>HYBRID</item>
+        <item>SATELLITE</item>
+        <item>Terrain</item>
+        <item>None</item>
+    </string-array>
+    <string-array name="languageoption">
+        <item>ENGLISH US</item>
+        <item>SOMALI</item>
+        <item>German</item>
+        <item>Chinese</item>
+        <item>French</item>
+        <item>Japanese</item>
+        <item>Korean</item>
+        <item>Italian</item>
+        <item>Taiwan</item>
+     </string-array>
 </resources>

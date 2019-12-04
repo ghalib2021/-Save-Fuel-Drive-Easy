@@ -1,38 +1,42 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:keepScreenOn="true"
     tools:context="com.example.google.playservices.placecomplete.showmap">
 
-
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=""
+        android:gravity="center"
+        android:id="@+id/textViewstep"
+        android:background="@color/actionbarcolor"
+        android:textColor="@color/text"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
 
     <fragment
         android:id="@+id/mapshowlay"
         android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_below="@+id/textViewstep"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        />
 
-    <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:id="@+id/imageButtonmap"
-        android:layout_alignParentTop="true"
+
+    <Spinner
+        android:id="@+id/mapviews"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="2dp"
+        android:layout_below="@+id/textViewstep"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:src="@drawable/rootview"
-
-        android:layout_alignBottom="@+id/imageButtonsatellite" />
-
-    <ImageView
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:id="@+id/imageButtonsatellite"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="10dp"
-        android:layout_toRightOf="@+id/imageButtonmap"
-        android:layout_toEndOf="@+id/imageButtonmap"
-        android:src="@drawable/satellite" />
-<LinearLayout
+        android:entries="@array/mape_types"/>
+    <LinearLayout
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_alignParentBottom="true"
@@ -82,6 +86,33 @@
         android:layout_alignEnd="@+id/imageButtonsatellite" />
     </LinearLayout>
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageViewvoice"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/redv"
+        android:src="@drawable/slash" />
 
+    <Spinner
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:id="@+id/spinnerplaceshow"
+        android:layout_alignTop="@+id/mapshowlay"
+
+        android:layout_toRightOf="@+id/mapviews"
+        android:layout_alignBottom="@+id/mapviews"
+        android:spinnerMode="dropdown" />
+    <Spinner
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:id="@+id/languageoption"
+        android:layout_alignTop="@+id/mapshowlay"
+        android:layout_toRightOf="@+id/spinnerplaceshow"
+        android:layout_alignBottom="@+id/spinnerplaceshow"
+        android:entries="@array/languageoption"
+        android:spinnerMode="dropdown" />
 
 </RelativeLayout>

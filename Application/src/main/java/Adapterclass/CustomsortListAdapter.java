@@ -1,13 +1,14 @@
 package Adapterclass;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import com.example.google.playservices.placecomplete.R;
+import com.map.saveeasysavedrivee.R;
 import BeanClass.Placedata;
 
 import java.text.DecimalFormat;
@@ -53,9 +54,15 @@ public class CustomsortListAdapter extends BaseAdapter {
             holder = (ViewHolder) convertView.getTag();
         }
         DecimalFormat df = new DecimalFormat("####0.000");
+        holder.headlineView.setTextColor(Color.WHITE);
         holder.headlineView.setText(listData.get(position).getPlace());
-        holder.reporterNameView.setText(" " + df.format(listData.get(position).getDistance())+" km" );
-        return convertView;
+        if(listData.get(position).getDistanceunit().equals("KiloMeter")) {
+            holder.reporterNameView.setText(" " + df.format(listData.get(position).getDistance())+" Kilometer");
+
+        } else {
+            holder.reporterNameView.setText(" " + df.format(listData.get(position).getDistance() * 0.621371)+" Miles");
+        }
+          return convertView;
     }
 
     static class ViewHolder {

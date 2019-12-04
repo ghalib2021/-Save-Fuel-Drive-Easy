@@ -41,7 +41,7 @@ public class DirectionsJSONParser1 {
                       /*String instruction;
                         JSONObject json_obj =  jSteps.getJSONObject(i);*/
 
-                 System.out.println("steps for going "+jSteps.get(k));
+               //  System.out.println("steps for going "+jSteps.get(k));
 
 
                         if((boolean)(((JSONObject)jSteps.get(k)).has("html_instructions")))
@@ -51,10 +51,11 @@ public class DirectionsJSONParser1 {
                             String newString = html1.replaceFirst( "\\((^\\))+\\)", "").trim();
                             String distancestep="Distance :"+(String)((JSONObject)((JSONObject)jSteps.get(k)).get("distance")).get("text");
                             String durationstep="Duration :"+((JSONObject)((JSONObject)jSteps.get(k)).get("duration")).get("text");
-                            String polyline = "";
-                            polyline = (String)((JSONObject)((JSONObject)jSteps.get(k)).get("polyline")).get("points");
-                            List<LatLng> list = decodePoly(polyline);
+
+
                             String stepdatastr=newString+"*"+distancestep+"\n"+durationstep;
+
+                            System.out.println("ssssstep"+newString);
                             as.add(stepdatastr);
                             /** Traversing all points */
                         System.out.println(as.get(k));

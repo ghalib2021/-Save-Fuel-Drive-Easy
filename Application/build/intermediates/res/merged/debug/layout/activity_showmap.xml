@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    tools:context="com.example.google.playservices.placecomplete.showmap">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=""
+        android:gravity="center"
+        android:id="@+id/textViewstep"
+        android:background="@color/actionbarcolor"
+        android:textColor="@color/text"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <fragment
+        android:id="@+id/mapshowlay"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_below="@+id/textViewstep"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+    <Spinner
+        android:id="@+id/mapviews"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="2dp"
+        android:layout_below="@+id/textViewstep"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:entries="@array/mape_types"/>
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal"
+    android:id="@+id/linearLayout">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Total places : "
+        android:id="@+id/textView2"
+
+        android:layout_alignRight="@+id/imageButtonsatellite"
+        android:layout_alignEnd="@+id/imageButtonsatellite" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=""
+        android:id="@+id/textViewplace"
+
+        android:layout_alignRight="@+id/imageButtonsatellite"
+        android:layout_alignEnd="@+id/imageButtonsatellite" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Visited places : "
+        android:id="@+id/textView3"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/imageButtonsatellite"
+        android:layout_alignEnd="@+id/imageButtonsatellite" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=" 0 "
+        android:id="@+id/textvisitedplace"
+
+        android:layout_alignRight="@+id/imageButtonsatellite"
+        android:layout_alignEnd="@+id/imageButtonsatellite" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageViewvoice"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/redv"
+        android:src="@drawable/slash" />
+
+    <Spinner
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:id="@+id/spinnerplaceshow"
+        android:layout_alignTop="@+id/mapshowlay"
+
+        android:layout_toRightOf="@+id/mapviews"
+        android:layout_alignBottom="@+id/mapviews"
+        android:spinnerMode="dropdown" />
+    <Spinner
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:id="@+id/languageoption"
+        android:layout_alignTop="@+id/mapshowlay"
+        android:layout_toRightOf="@+id/spinnerplaceshow"
+        android:layout_alignBottom="@+id/spinnerplaceshow"
+        android:entries="@array/languageoption"
+        android:spinnerMode="dropdown" />
+
+</RelativeLayout>
+<!-- From: file:/D:/projects/RE-Run-drive/RE-Run-drive/PlaceComplete/Application/src/main/res/layout/activity_showmap.xml -->

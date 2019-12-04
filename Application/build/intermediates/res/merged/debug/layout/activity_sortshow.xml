@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/backgroundapp"
+    tools:context="com.example.google.playservices.placecomplete.Sortshow">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff"
+        android:layout_gravity="center"
+        android:text="Places"
+        android:id="@+id/textView"
+        android:layout_column="6" />
+
+
+    <ListView
+        android:id="@+id/listViewsortplace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:dividerHeight="0.1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="40dp"
+        android:textColor="#ffffff"
+        android:divider="#ffffff"
+
+        android:layout_gravity="center_horizontal"
+        />
+
+
+
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="center"
+    android:text="START NAVIGATION"
+    android:id="@+id/buttonmapshow"
+    android:background="@color/actionbarcolor"
+    android:textColor="#ffffff"
+    android:layout_alignParentBottom="true"
+
+    />
+</RelativeLayout>
+<!-- From: file:/D:/projects/RE-Run-drive/RE-Run-drive/PlaceComplete/Application/src/main/res/layout/activity_sortshow.xml -->

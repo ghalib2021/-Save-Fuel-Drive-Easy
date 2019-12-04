@@ -15,7 +15,7 @@
    limitations under the License.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.google.playservices.placecomplete"
+    package="com.map.saveeasysavedrivee"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -46,7 +46,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.example.google.playservices.placecomplete.MainActivity"
+            android:name="com.map.saveeasysavedrivee.MainActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait" >
             <intent-filter>
@@ -56,7 +56,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.google.playservices.placecomplete.Sortshow"
+            android:name="com.map.saveeasysavedrivee.Sortshow"
             android:label="@string/app_name"
             android:screenOrientation="portrait" >
             <intent-filter>
@@ -66,7 +66,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.google.playservices.placecomplete.showmap"
+            android:name="com.map.saveeasysavedrivee.showmap"
             android:label="@string/title_activity_showmap"
             android:screenOrientation="portrait" >
             <intent-filter>
@@ -81,10 +81,10 @@
             android:value="@integer/google_play_services_version" />
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyCGCOAncFwFdZdsLvecW2EyAlg2DA8CLuM" />
+            android:value="AIzaSyAHsmmOWPMyHN_5GqUySzN9jy7_0U8GhHE" />
 
         <activity
-            android:name="com.example.google.playservices.placecomplete.DirectionStep"
+            android:name="com.map.saveeasysavedrivee.DirectionStep"
             android:label="@string/title_activity_direction_step" >
         </activity>
         <activity

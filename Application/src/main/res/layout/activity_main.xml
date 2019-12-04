@@ -17,6 +17,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/backgroundapp"
+
     >
 
     <LinearLayout
@@ -24,7 +26,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:id="@+id/linver"
-        android:background="@color/colorPrimary"
+        android:background="#06c6b9"
         android:paddingBottom="@dimen/vertical_page_margin"
         android:paddingLeft="@dimen/horizontal_page_margin"
         android:paddingRight="@dimen/horizontal_page_margin"
@@ -32,7 +34,7 @@
 
 <TableLayout
     android:layout_width="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="#06c6b9"
     android:layout_height="wrap_content"
     >
     <TableRow
@@ -72,12 +74,19 @@
                 android:gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
-
+                <Spinner
+                    android:id="@+id/spinner1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:popupBackground="#000000"
+                    android:layout_column="1"
+                    android:entries="@array/distance"
+                />
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:id="@+id/button_reset"
-                    android:layout_column="1"
+                    android:layout_column="2"
                     android:layout_marginRight="20dp"
                     android:src="@drawable/refresh" />
 
@@ -86,14 +95,14 @@
                     android:layout_height="40dp"
                     android:id="@+id/buttonsort"
                     android:layout_marginRight="20dp"
-                    android:layout_column="2"
+                    android:layout_column="3"
                     android:src="@drawable/nexticon" />
 
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:id="@+id/buttonplus"
-                    android:layout_column="3"
+                    android:layout_column="4"
                     android:src="@drawable/plus" />
 
             </TableRow>
@@ -106,7 +115,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:dividerHeight="0.2dp"
-        android:textColor="#000"
+        android:textColor="#ffffff"
         android:divider="@color/textColorSecondary"
 
         android:layout_gravity="center_horizontal"

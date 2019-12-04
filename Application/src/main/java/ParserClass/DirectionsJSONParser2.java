@@ -40,7 +40,7 @@ public class DirectionsJSONParser2 {
                       /*String instruction;
                         JSONObject json_obj =  jSteps.getJSONObject(i);*/
 
-                 System.out.println("steps for going "+jSteps.get(k));
+                System.out.println("steps for going ###"+jSteps.get(k));
 
 
                         if((boolean)(((JSONObject)jSteps.get(k)).has("html_instructions")))
@@ -54,9 +54,15 @@ public class DirectionsJSONParser2 {
                             String polyline = "";
                             polyline = (String)((JSONObject)((JSONObject)jSteps.get(k)).get("polyline")).get("points");
                             List<LatLng> list = decodePoly(polyline);
+                            String turnlatlng = null;
+                            for(int l=0;l<list.size();l++){
+                             //   int s=list.size()/2;
+                                turnlatlng =list.get(0).latitude+","+list.get(0).longitude;
+                            }
                             String stepdatastr=newString+"\n"+distancestep+"\n"+durationstep;
-                            String turnlatlng=list.get(k).latitude+","+list.get(k).longitude;
-                            as.put( turnlatlng,html1);
+
+                            System.out.println("pranali"+turnlatlng+"rane"+newString);
+                            as.put(turnlatlng,newString);
 
 
 
