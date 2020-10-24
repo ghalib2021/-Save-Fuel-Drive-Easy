@@ -6,6 +6,18 @@ It shows how to use a custom Adapter to display suggestions in an AutocompleteTe
 Once selected, details about a place are retrieved based on its Place id from the
 Places Geo Data API.
 
+The description of Save-Fuel-Drive-Easy
+By using this app you can easily add different locations which you want to visit.
+
+1) App then calculates the shortest distance required to visit all these places and uses google voice api and google maps to direct you to these locations.
+
+2) If you unintentionally takes the wrong turn app recalculates the distance and path guides you to various locations.
+
+3)you can also prioritize location in it and can select the location which you want to visit earlier.
+
+![alt text](https://github.com/ghalib2021/-Save-Fuel-Drive-Easy/blob/master/screen-0.jpg)
+![alt text](https://github.com/ghalib2021/-Save-Fuel-Drive-Easy/blob/master/screen-1.jpg)
+![alt text](https://github.com/ghalib2021/-Save-Fuel-Drive-Easy/blob/master/screen-2.jpg)
 Pre-requisites
 --------------
 
